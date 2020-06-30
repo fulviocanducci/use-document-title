@@ -1,23 +1,11 @@
-import * as React from 'react';
+import React, { useState, useEffect } from "react";
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
-
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
-
-  return counter;
-};
+export function useDocumentTitle(
+  value: string = ""
+): [string, React.Dispatch<React.SetStateAction<string>>] {
+  const [title, setTitle] = useState<string>(value);
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+  return [title, setTitle];
+}

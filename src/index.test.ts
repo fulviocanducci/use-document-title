@@ -1,29 +1,26 @@
-import { useMyHook } from './'
+import { useDocumentTitle } from './'
 import { renderHook, act } from "@testing-library/react-hooks";
 
-// mock timer using jest
 jest.useFakeTimers();
 
-describe('useMyHook', () => {
-  it('updates every second', () => {
-    const { result } = renderHook(() => useMyHook());
+describe('useDocumentTitle Test Constructor', () => {
+  it('Set Constructor', () => {
+    const { result } = renderHook(() => useDocumentTitle("First Page"));
+    act(()=>{
+      expect(result.current[0]).toBe("First Page");
+      expect(result.current[1]).toBeInstanceOf(Object);
+    });    
+  }); 
+});
 
-    expect(result.current).toBe(0);
-
-    // Fast-forward 1sec
-    act(() => {
-      jest.advanceTimersByTime(1000);
-    });
-
-    // Check after total 1 sec
-    expect(result.current).toBe(1);
-
-    // Fast-forward 1 more sec
-    act(() => {
-      jest.advanceTimersByTime(1000);
-    });
-
-    // Check after total 2 sec
-    expect(result.current).toBe(2);
-  })
-})
+// describe('useDocumentTitle Test Method', () => {    
+//   it('Set Methods', () => {
+//     const { result } = renderHook(() => useDocumentTitle());
+//     result.current[1]("First Page");
+//     act(()=> {
+//       jest.useFakeTimers();
+//       expect(result.current[0]).toBe("First Page");
+//       expect(result.current[1]).toBeInstanceOf(Object);   
+//     });         
+//   });
+// });
