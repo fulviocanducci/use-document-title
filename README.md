@@ -1,4 +1,4 @@
-# use-document-title
+# canducci-use-document-title
 
 > Document
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save use-document-title
+npm install --save canducci-use-document-title
 ```
 
 ## Usage

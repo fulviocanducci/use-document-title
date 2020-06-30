@@ -1,8 +1,8 @@
 {
-  "name": "use-document-title",
+  "name": "canducci-use-document-title",
   "keywords": ["react", "useDocumentTitle", "react-hooks"],
-  "version": "1.0.0",
-  "description": "Document",
+  "version": "1.0.1",
+  "description": "Hook useDocumentTitle to change document.title",
   "author": "fulviocanducci",
   "license": "MIT",
   "repository": "fulviocanducci/use-document-title",
