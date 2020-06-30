@@ -13,18 +13,23 @@ npm install --save use-document-title
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from "react";
 
-import { useMyHook } from 'use-document-title'
+import { useDocumentTitle } from "use-document-title";
 
-const Example = () => {
-  const example = useMyHook()
+const App = () => {
+  const [title, setTitle] = useDocumentTitle();
+  const setTitleName = () => setTitle("New Nome");
+  const setDateTime = () => setTitle(new Date().toISOString());
   return (
     <div>
-      {example}
+      <div>{title}</div>
+      <button onClick={setTitleName}>Set Name</button>
+      <button onClick={setDateTime}>Set DateTime</button>
     </div>
-  )
-}
+  );
+};
+export default App;
 ```
 
 ## License
