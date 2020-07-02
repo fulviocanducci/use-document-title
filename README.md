@@ -1,6 +1,6 @@
 # canducci-use-document-title
 
-[![NPM](https://img.shields.io/npm/v/use-document-title.svg)](https://www.npmjs.com/package/use-document-title) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/use-document-title?style=plastic)](https://www.npmjs.com/package/use-document-title) [![Node.js CI](https://github.com/fulviocanducci/use-document-title/workflows/Node.js%20CI/badge.svg)](https://www.npmjs.com/package/use-document-title)
+[![NPM](https://img.shields.io/npm/v/canducci-use-document-title.svg)](https://www.npmjs.com/package/canducci-use-document-title) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/canducci-use-document-title?style=plastic)](https://www.npmjs.com/package/canducci-use-document-title) [![Node.js CI](https://github.com/fulviocanducci/use-document-title/workflows/Node.js%20CI/badge.svg)](https://www.npmjs.com/package/canducci-use-document-title)
 
 ## Install
 
