@@ -13,7 +13,7 @@ npm install --save canducci-use-document-title
 ```tsx
 import React from "react";
 
-import { useDocumentTitle } from "use-document-title";
+import { useDocumentTitle } from "canducci-use-document-title";
 
 const App = () => {
   const [title, setTitle] = useDocumentTitle();
